@@ -1,0 +1,260 @@
+.buttons-general-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 20px;
+}
+.buttons-general-container .btn {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+/* *************************************************** */
+
+.btn-search {
+  padding: 5px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* *************************************************** */
+
+.btn-filter-container {
+  width: 90%;
+  margin: 15px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.btn-filter-container .btn-filter {
+  padding: 6px 5px;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* *************************************************** */
+
+.btn-heart-container .black {
+  display: block;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.btn-heart-container .red {
+  display: none;
+}
+
+.btn-heart-container.red-heart .black {
+  display: none;
+}
+.btn-heart-container.red-heart .red {
+  display: block;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* *************************************************** */
+
+#grass,
+#btn-grass {
+  background-color: rgb(50, 205, 50);
+}
+#poison,
+#btn-poison {
+  background-color: rgb(138, 43, 226);
+  color: rgb(255, 255, 255);
+}
+#fire,
+#btn-fire {
+  background-color: rgb(240, 80, 48);
+}
+#flying,
+#btn-flying {
+  background-color: rgb(152, 168, 240);
+}
+#water,
+#btn-water {
+  background-color: rgb(0, 255, 255);
+}
+#bug,
+#btn-bug {
+  background-color: rgb(0, 255, 0);
+}
+#normal,
+#btn-normal {
+  background-color: rgb(168, 160, 144);
+}
+#electric,
+#btn-electric {
+  background-color: rgb(255, 255, 0);
+}
+#ground,
+#btn-ground {
+  background-color: rgb(234, 214, 164);
+}
+#fairy,
+#btn-fairy {
+  background-color: rgb(231, 159, 231);
+}
+#fighting,
+#btn-fighting {
+  background-color: rgb(160, 80, 56);
+  color: rgb(255, 255, 255);
+}
+#ice,
+#btn-ice {
+  background-color: rgb(88, 200, 224);
+}
+#psychic,
+#btn-psychic {
+  background-color: rgb(248, 112, 160);
+}
+#dragon,
+#btn-dragon {
+  background-color: rgb(138, 43, 226);
+  color: rgb(255, 255, 255);
+}
+#steel,
+#btn-steel {
+  background-color: rgb(168, 168, 192);
+}
+#rock,
+#btn-rock {
+  background-color: rgb(184, 160, 88);
+}
+#ghost,
+#btn-ghost {
+  background-color: rgb(96, 96, 176);
+  color: rgb(255, 255, 255);
+}
+#dark,
+#btn-dark {
+  background-color: rgb(122, 88, 72);
+  color: rgb(255, 255, 255);
+}
+
+/* ******************************************************************************** */
+
+.btn-add {
+  width: 140px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right,
+    #77530a,
+    #ffd277,
+    #77530a,
+    #77530a,
+    #ffd277,
+    #77530a
+  );
+  background-size: 250%;
+  color: #ffd277;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 1s;
+}
+
+.btn-add::before {
+  position: absolute;
+  content: "Add Favorite";
+  color: #ffd277;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97%;
+  height: 90%;
+  border-radius: 8px;
+  transition-duration: 1s;
+  background-color: rgba(0, 0, 0, 0.842);
+  background-size: 200%;
+}
+.btn-add:hover {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+/* ******************************************************************************** */
+
+.delete-item {
+  position: relative;
+  padding: 8px 8px;
+  font-size: 1.2rem;
+  border-radius: 7px;
+  border: 2px solid rgb(0 0 0);
+  background: rgb(168, 181, 240);
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
+.delete-item:hover {
+  background: rgb(61, 106, 255);
+  box-shadow: 0 0 15px 3px rgba(0, 142, 236, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  color: rgb(255, 255, 255);
+}
+
+.delete-item:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+.delete-item::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+.delete-item:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}

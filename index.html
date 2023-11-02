@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="buttons.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <title>SEARCH POK</title>
+  </head>
+  <body>
+    <div class="title">
+      <img src="img/pokedex.png" alt="Pokédex" class="poke-logo" />
+    </div>
+    <div class="likes-container">
+      <button>❤️</button>
+      <h2 id="cont-likes">0</h2>
+    </div>
+    <div class="likes-view-pok" id="likes-view-pok"></div>
+    <form action="" class="form-pok">
+      <label for="searc-pok"></label>
+      <input
+        type="text"
+        name=""
+        id="search-pok"
+        class="search-pok"
+        placeholder="Search by Id or Name"
+      />
+      <button class="delete-item" id="btn-search">Find</button>
+    </form>
+    <div class="btn-filter-container">
+      <button class="btn-filter" id="btn-all">View all</button>
+      <button class="btn-filter" id="btn-grass">grass</button>
+      <button class="btn-filter" id="btn-poison">poison</button>
+      <button class="btn-filter" id="btn-fire">fire</button>
+      <button class="btn-filter" id="btn-flying">flying</button>
+      <button class="btn-filter" id="btn-water">water</button>
+      <button class="btn-filter" id="btn-bug">bug</button>
+      <button class="btn-filter" id="btn-normal">normal</button>
+      <button class="btn-filter" id="btn-electric">electric</button>
+      <button class="btn-filter" id="btn-ground">ground</button>
+      <button class="btn-filter" id="btn-fairy">fairy</button>
+      <button class="btn-filter" id="btn-fighting">fighting</button>
+      <button class="btn-filter" id="btn-ice">ice</button>
+      <button class="btn-filter" id="btn-psychic">psychic</button>
+      <button class="btn-filter" id="btn-dragon">dragon</button>
+      <button class="btn-filter" id="btn-steel">steel</button>
+      <button class="btn-filter" id="btn-rock">rock</button>
+      <button class="btn-filter" id="btn-ghost">ghost</button>
+      <button class="btn-filter" id="btn-dark">dark</button>
+    </div>
+    <div class="loader-container" id="loader-container">
+      <h2>Created by:</h2>
+      <img src="img/logo.png" alt="" />
+    </div>
+    <hr class="line" />
+    <div class="buttons-general-container" id="buttons"></div>
+    <div class="general-container" id="general-container"></div>
+
+    <script src="java.js"></script>
+    <script src="filter.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
